@@ -1,0 +1,172 @@
+*
+{
+  font-family:Helvetica;
+}
+
+body, html
+{
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+}
+
+#inputContainer, #replayContainer
+{
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+  position:relative;
+}
+
+
+#replayContainer
+{
+  display:none;
+}
+
+#input
+{
+  border:1px solid #aaaaaa;
+  box-sizing:border-box;
+  position:absolute;
+  left:8px;
+  top:8px;
+  width:calc(100% - 16px);
+  height:calc(100% - 64px);
+  padding:4px;
+}
+
+#doReplay
+{
+  position:absolute;
+  left:8px;
+  bottom:8px;
+  width:calc(100% - 256px);
+  height:40px;
+}
+
+#file
+{
+  position:absolute;
+  right:8px;
+  bottom:8px;
+  width:232px;
+  height:40px;
+  padding:0px;
+  margin:0px;
+}
+
+button, input
+{
+  border:1px solid #aaaaaa;
+  background-color:white;
+  border-radius:0px;
+  box-sizing:border-box;
+}
+
+button:hover, input:hover, input:focus, #input:hover, #input:focus
+{
+  color:#5555FF;
+  border:1px solid #5555FF;
+}
+
+button:active
+{
+  color:#0000CC;
+  border:1px solid #0000CC;
+  background-color:#EEEEEE;
+}
+
+#viewer
+{
+  border:1px solid #aaaaaa;
+  position:absolute;
+  left:8px;
+  top:8px;
+  width:960px;
+  height:540px;
+  background-size:100%;
+}
+
+#log
+{
+  border:1px solid #aaaaaa;
+  position:absolute;
+  top:8px;
+  right:8px;
+  left:976px;
+  bottom:8px;
+  overflow-y:auto;
+  word-wrap:break-word;
+  padding:4px;
+}
+
+#log .logItem:last-child
+{
+  padding-bottom:4px;
+}
+
+#start
+{
+  position: absolute;
+  left:8px;
+  bottom:8px;
+  top:556px;
+  width:960px;
+}
+
+.Space
+{
+  height:12px;
+  display:block;
+}
+
+#frontPoke
+{
+  transform:scale(2.5);
+  transform-origin: 50% 100%;
+  position:absolute;
+  bottom:64px;
+  left:192px;
+}
+
+#frontIcons
+{
+  position:absolute;
+  left:0px;
+  top:0px;
+  background:rgba(255,255,255,0.7);
+  height:40px;
+}
+
+#backPoke
+{
+  width:152px;
+  height:152px;
+  position:absolute;
+  bottom:224px;
+  right:160px;
+}
+
+#backIcons
+{
+  position:absolute;
+  right:0px;
+  top:0px;
+  height:40px;
+  background:rgba(255,255,255,0.7);
+}
+
+#vlog
+{
+  position:absolute;
+  bottom:0px;
+  background:rgba(255,255,255,0.6);
+  left:0px;
+  right:0px;
+  text-align:center;
+  transition:all 2s;
+  z-index:100;
+}

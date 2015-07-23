@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		
+		<title>Replays are Fun</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/animation.js"></script>
+		<script src="js/replayviewer.js"></script>
+	</head>
+	<body>
+		<div id="inputContainer">
+			<textarea id="input" resizable="false">Paste or upload Pokemon Online HMTL Battle Log... (Documents/Pokemon Online/Logs/Battle Logs)</textarea>
+			<button id="doReplay">Replay</button>
+			<input type="file" id="file" name="files[]" />
+		</div>
+		<div id="replayContainer">
+			<div id="viewer">
+				<div id="vlog"></div>
+				<img id="frontPoke"></img>
+				<div id="frontIcons">
+					<img id="frontIcon0"></img>
+					<img id="frontIcon1"></img>
+					<img id="frontIcon2"></img>
+					<img id="frontIcon3"></img>
+					<img id="frontIcon4"></img>
+					<img id="frontIcon5"></img>
+				</div>
+				<img id="backPoke"></img>
+				<div id="backIcons">
+					<img id="backIcon0"></img>
+					<img id="backIcon1"></img>
+					<img id="backIcon2"></img>
+					<img id="backIcon3"></img>
+					<img id="backIcon4"></img>
+					<img id="backIcon5"></img>
+				</div>
+			</div>
+			<div id="log"></div>
+			<button id="start">+~+</button>
+		</div>
+		<script>
+			init();
+		</script>
+	</body>
+</html>
